@@ -1,0 +1,5 @@
+build-and-push.sh
+.git
+.gitignore
+.idea
+README.md
