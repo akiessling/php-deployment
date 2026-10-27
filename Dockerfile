@@ -1,4 +1,4 @@
-FROM composer:2.10.2 AS composer
+FROM composer:2.10.3 AS composer
 
 FROM debian:trixie-slim
 
@@ -10,3 +10,5 @@ RUN apt-get update && \
     apt-get clean
 
 WORKDIR /app
+
+RUN useradd --create-home --user-group --shell /bin/bash builduser
